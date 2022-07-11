@@ -7,9 +7,9 @@ public class Main {
 		FindMaxUsingGenerics findMax = new FindMaxUsingGenerics();
 		
 		findMax.getMax(30.1f, 20.1f, 10.2f);
-	//	findMax.getMax(10.2f, 30.2f, 20.2f);
-	//	findMax.getMax(10.2f, 20.2f, 30.2f);
-
+		findMax.getMax(10.2f, 30.2f, 20.2f);
+		findMax.getMax(10.2f, 20.2f, 30.2f);
+		
 	}
 
 }
