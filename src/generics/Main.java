@@ -7,8 +7,8 @@ public class Main {
 		FindMaxUsingGenerics findMax = new FindMaxUsingGenerics();
 		
 		findMax.getMax("Veerendra", "Sunny", "SV");
-		//findMax.getMax("Sunny", "Veerendra", "SV");
-		//findMax.getMax("Sunny", "SV", "Veerendra");
+		findMax.getMax("Sunny", "Veerendra", "SV");
+		findMax.getMax("Sunny", "SV", "Veerendra");
 		
 	}
 
