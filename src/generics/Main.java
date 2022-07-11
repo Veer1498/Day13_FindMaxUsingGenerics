@@ -1,31 +1,29 @@
 package generics;
-
+import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Welcome to Find Maxmum Program");
-		FindMaxUsingGenerics findMax = new FindMaxUsingGenerics();
-		
-		System.out.println("String Input");
-
-		findMax.getMax("Veerendra", "Sunny", "SV");
-		findMax.getMax("Sunny", "Veerendra", "SV");
-		findMax.getMax("Sunny", "SV", "Veerendra");
-		
-		
-		System.out.println("Float Input");
-		findMax.getMax(30.2f, 20.1f, 10.2f);
-		findMax.getMax(10.2f, 30.2f, 20.2f);
-		findMax.getMax(10.2f, 20.2f, 30.2f);
+		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Integer Input");
-
-		findMax.getMax(30, 20, 10);
-		findMax.getMax(10, 30, 20);
-		findMax.getMax(10, 20, 30);
+		testMax(sc.next(), sc.next(), sc.next());
+	//	testMax(10, 30, 20);
+	//	testMax(10, 20, 30);
 		
 		
 		
+	}
+	public static <S extends Comparable> S testMax(S x, S y, S z) {
+		// TODO Auto-generated method stub
+		
+		S max = x;
+		if(y.compareTo(x)>0 && y.compareTo(z)>0)
+			max = y;
+		else if(z.compareTo(y)>0 && z.compareTo(x)>0)
+			max = z;
+		System.out.println("The Max is "+max);
+		return max;
 	}
 
 }
