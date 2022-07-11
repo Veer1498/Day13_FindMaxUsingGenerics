@@ -6,9 +6,9 @@ public class Main {
 		System.out.println("Welcome to Find Maxmum Program");
 		FindMaxUsingGenerics findMax = new FindMaxUsingGenerics();
 		
-		findMax.getMax(30, 20, 10);
-		findMax.getMax(10, 30, 20);
-		findMax.getMax(10, 20, 30);
+		findMax.getMax(30.1f, 20.1f, 10.2f);
+	//	findMax.getMax(10.2f, 30.2f, 20.2f);
+	//	findMax.getMax(10.2f, 20.2f, 30.2f);
 
 	}
 

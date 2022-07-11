@@ -2,10 +2,10 @@ package generics;
 
 public class FindMaxUsingGenerics {
 
-	public static Integer getMax(Integer x, Integer y, Integer z) {
+	public static Float getMax(Float x, Float y, Float z) {
 		// TODO Auto-generated method stub
 		
-		Integer max = x;
+		Float max = x;
 		if(y.compareTo(x)>0 && y.compareTo(z)>0)
 			max = y;
 		else if(z.compareTo(y)>0 && z.compareTo(x)>0)
